@@ -14,6 +14,9 @@ ul {
 .wrapper { 
     width: 1440px;
     margin: 0 auto;
+
+    font-family: 'Red Hat Text';
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .header {
@@ -40,7 +43,6 @@ ul {
     margin-right: 60px;
 
     /* text */
-    font-family: 'Red Hat Text';
     font-size: 48px;
     line-height: 64px;
     letter-spacing: -0.07em;
@@ -66,7 +68,6 @@ ul {
     cursor: pointer;
 
     /* text */
-    font-family: 'Red Hat Text';
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.07em;
@@ -78,5 +79,62 @@ ul {
     background-color: #BFBFBF;
     border: 1px solid #BFBFBF;
     color: black;
+}
+
+.main {
+    padding-top: 75px;
+    padding-bottom: 35px;
+
+    text-align: center;
+}
+
+.main__title {
+    font-size: 96px;
+    line-height: 127px;
+    letter-spacing: -0.02em;
+    color: #E5E5E5;
+
+    margin-bottom: 15px;
+}
+
+.main__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__info-img {
+    margin-right: 160px;
+}
+
+.main__about-phone {
+    font-family: 'Roboto';
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #5C97B1;
+    text-align: left;
+
+    position: relative;
+}
+
+.main__about-phone p {
+    margin-bottom: 30px;
+}
+
+.main__about-phone p:last-child {
+    margin-bottom: 0;
+}
+
+.main__about-phone::before {
+    content: "";
+    position: absolute;
+
+    height: 100%;
+    background-color: #5C97B1;
+    width: 2px;
+
+    top: 0;
+    left: -75px;
 }
 
